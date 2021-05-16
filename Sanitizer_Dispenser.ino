@@ -45,12 +45,6 @@ void setup(){
   
   // Init Pin
   pinMode(UV_CHAMBER_LED, OUTPUT);
-  
-  /* Close chamber at start */
-  for (int pos = 90; pos >= 0; pos -= 1) {
-    UV_Chamber_Motor.write(pos);
-    delay(30);
-  }
 }
 
 void loop(){
